@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="icon" href="assets/portfolio_686226.png"/>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Case Study of Portfolio</title>
+    <style>
+      @media screen and (min-width: 767px) and (max-width: 928px) {
+        .container_2 {
+          display: none;
+        }
+
+        .Footer{
+            display:flex;
+            flex-direction:column;
+            background-color:black;
+            height:350px;
+        }
+
+        .Footer_Content{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .Footer_Div_1{
+            width:80%;
+            margin-left:0%;
+            margin-right:0%;
+            box-sizing:border-box;
+        }
+
+        .Footer_Div_1 p{
+            color:white;
+            font-size:0.8rem;
+        }
+
+        .Footer_Div_2{
+            width:80%;
+            height:50px;
+            margin-right:0%;
+            margin-left:0%;
+            margin-top:22px;
+            box-sizing:border-box;
+        }
+
+        .Footer_Heading_Div{
+            display:flex;
+            justify-content:start;
+        }
+
+        .Footer_Social_Div{
+            display:flex;
+            justify-content:start;
+        }
+
+        hr{
+            border: none;
+            height: 0.8px;
+            color: rgba(255, 255, 255, 0.498);
+            background-color: rgba(255, 255, 255, 0.482);
+            margin-top: 50px;
+            width:80%;
+        }
+
+        .first_html_projects{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .first_html_project_1{
+            width:90%;
+            margin-top:100px;
+        }
+
+        .first_html_lap_image_1{
+            width:100%;
+            height:500px;
+        }
+
+        .first_html_content_div{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .first_html_content_div_1{
+            margin-top:30px;
+            width:80%;
+        }
+
+        .first_html_content_div_2{
+            width:80%;
+        }
+
+        .first_html_tools_div{
+            margin-top:30px;
+            margin-bottom: 30px;
+            width:80%;
+        }
+
+        .Live_Links_div{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .Live_Links_div_1{
+            width:80%;
+        }
+
+        .Live_links_div_2{
+            width:80%;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        .container_2 {
+          display: none;
+        }
+
+        .banner_button {
+            width: 240px;
+            height: 60px;
+            position: relative;
+            margin-top: 50px;
+            background:#7843E9;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+            transition: transform .3s;
+            margin-bottom:70px;
+        }
+      }
+      @media screen and (max-width: 767px) and (min-width: 580px) {
+        .Footer{
+            display:flex;
+            flex-direction:column;
+            background-color:black;
+            height:350px;
+        }
+
+        .Footer_Content{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .Footer_Div_1{
+            width:70%;
+            margin-left:0%;
+            margin-right:0%;
+            box-sizing:border-box;
+        }
+
+        .Footer_Div_1 p{
+            color:white;
+            font-size:0.8rem;
+        }
+
+        .Footer_Div_2{
+            width:70%;
+            height:50px;
+            margin-right:0%;
+            margin-left:0%;
+            margin-top:22px;
+            box-sizing:border-box;
+        }
+
+        .Footer_Heading_Div{
+            display:flex;
+            justify-content:start;
+        }
+
+        .Footer_Social_Div{
+            display:flex;
+            justify-content:start;
+        }
+
+        hr{
+            border: none;
+            height: 0.8px;
+            color: rgba(255, 255, 255, 0.498);
+            background-color: rgba(255, 255, 255, 0.482);
+            margin-top: 50px;
+            width:80%
+        }
+
+        .first_html_projects{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .first_html_project_1{
+            width:90%;
+            margin-top:100px;
+        }
+
+        .first_html_lap_image_1{
+            width:100%;
+            height:450px;
+        }
+
+        .first_html_content_div{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .first_html_content_div_1{
+            margin-top:30px;
+            width:80%;
+        }
+
+        .first_html_content_div_2{
+            width:80%;
+        }
+
+        .first_html_tools_div{
+            margin-top:30px;
+            margin-bottom: 30px;
+            width:80%;
+        }
+
+        .Live_Links_div{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .Live_Links_div_1{
+            width:80%;
+        }
+
+        .Live_links_div_2{
+            width:80%;
+        }
+      }
+
+      @media screen and (max-width: 580px) and (min-width: 470px) {
+        .Footer{
+            display:flex;
+            flex-direction:column;
+            background-color:black;
+            height:350px;
+        }
+
+        .Footer_Content{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .Footer_Div_1{
+            width:70%;
+            margin-left:0%;
+            margin-right:0%;
+            box-sizing:border-box;
+        }
+
+        .Footer_Div_1 p{
+            color:white;
+            font-size:0.8rem;
+        }
+
+        .Footer_Div_2{
+            width:70%;
+            height:50px;
+            margin-left:0%;
+            margin-right:0%;
+            margin-top:22px;
+            box-sizing:border-box;
+        }
+
+        .Footer_Heading_Div{
+            display:flex;
+            justify-content:start;
+        }
+
+        .Footer_Social_Div{
+            display:flex;
+            justify-content:start;
+        }
+
+        hr{
+            border: none;
+            height: 0.8px;
+            color: rgba(255, 255, 255, 0.498);
+            background-color: rgba(255, 255, 255, 0.482);
+            margin-top: 50px;
+            width:80%
+        }
+
+        .first_html_projects{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .first_html_project_1{
+            width:100%;
+            margin-top:100px;
+        }
+
+        .first_html_lap_image_1{
+            width:100%;
+            height:400px;
+        }
+
+        .first_html_content_div{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .first_html_content_div_1{
+            margin-top:30px;
+            width:80%;
+        }
+
+        .first_html_content_div_2{
+            width:80%;
+        }
+
+        .first_html_tools_div{
+            margin-top:30px;
+            margin-bottom: 30px;
+            width:80%;
+        }
+
+        .Live_Links_div{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .Live_Links_div_1{
+            width:80%;
+        }
+
+        .Live_links_div_2{
+            width:80%;
+        }
+
+        .first_html_banner_button_1{
+            width: 180px;
+            height: 60px;
+            position: relative;
+            background:#7843E9;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size:20px;
+            font-weight: 700;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+            transition: transform .3s;      
+        }
+
+        .first_html_banner_button_2{
+            width: 180px;
+            height: 60px;
+            position: relative;
+            border:2px solid #7843E9;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size:20px;
+            font-weight: 700;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+            transition: transform .3s;      
+        }
+      }
+      @media screen and (max-width: 470px) and (min-width:320px) {
+        .Footer{
+            display:flex;
+            flex-direction:column;
+            background-color:black;
+            height:350px;
+        }
+
+        .Footer_Content{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .Footer_Div_1{
+            width:70%;
+            margin-left:0%;
+            margin-right:0%;
+            box-sizing:border-box;
+        }
+
+        .Footer_Div_1 p{
+            color:white;
+            font-size:0.8rem;
+        }
+
+        .Footer_Div_2{
+            width:70%;
+            height:50px;
+            margin-right:0%;
+            margin-left:0%;
+            margin-top:22px;
+            box-sizing:border-box;
+        }
+
+        .Footer_Heading_Div{
+            display:flex;
+            justify-content:start;
+        }
+
+        .Footer_Social_Div{
+            display:flex;
+            justify-content:start;
+        }
+
+        hr{
+            border: none;
+            height: 0.8px;
+            color: rgba(255, 255, 255, 0.498);
+            background-color: rgba(255, 255, 255, 0.482);
+            margin-top: 50px;
+            width:80%
+        }
+
+        .first_html_projects{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .first_html_project_1{
+            width:100%;
+            margin-top:100px;
+            object-fit:cover;
+        }
+
+        .first_html_lap_image_1{
+            width:100%;
+            height:400px;
+        }
+
+        .first_html_content_div{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .first_html_content_div_1{
+            margin-top:30px;
+            width:80%;
+        }
+
+        .first_html_content_div_2{
+            width:80%;
+        }
+
+        .first_html_tools_div{
+            margin-top:30px;
+            margin-bottom: 30px;
+            width:80%;
+        }
+
+        .Live_Links_div{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .Live_Links_div_1{
+            width:80%;
+        }
+
+        .Live_links_div_2{
+            width:80%;
+        }
+
+        .first_html_banner_button_1{
+            width: 140px;
+            height: 60px;
+            position: relative;
+            background:#7843E9;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size:20px;
+            font-weight: 700;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+            transition: transform .3s;      
+        }
+
+        .first_html_banner_button_2{
+            width: 140px;
+            height: 60px;
+            position: relative;
+            border:2px solid #7843E9;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size:20px;
+            font-weight: 700;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+            transition: transform .3s;      
+        }
+      }
+      </style>
+      </head>
+</head>
+<body>
+    <div class="gradient">
+        <div class="background-image"></div>
+        <div class="heading" id="home">
+          <h1>PORTFOLIO</h1>
+        </div>
+        <div class="content">
+          <h2>
+            This page contains the case study of Portfolio Open-Source 
+            Project which includes the Project Overview, Tools Used and Live Links to the official product.
+          </h2>
+        </div>
+        <div class="button_div">
+          <a href="https://codehelp-shopping-cart.netlify.app/" target="_blank" id="project-link_button"><button class="banner_button">PROJECT LINK</button></a>
+        </div>
+        <div class="container_2">
+          <div class="ball"></div>
+        </div>
+      </div>
+      <div class="first_html_projects">
+        <div class="first_html_project_1">
+            <img src="assets/project-mockup-example-overlay (4).jpeg" class="first_html_lap_image_1"/>
+        </div>
+        <div class="first_html_content_div">
+            <div class="first_html_content_div_1"><h2 class="heading_2">Project Overview</h2></div>
+            <div class="first_html_content_div_2"><p class="project_1_content">
+                
+                I have developed a polished and visually appealing portfolio website utilizing HTML, CSS, and JavaScript. The site features a clean, modern design with intuitive navigation, ensuring visitors can easily explore my work and achievements. Each section is meticulously crafted to highlight my skills, projects, and professional journey.<br><br>
+                The responsive layout guarantees a seamless user experience across all devices, from desktops to smartphones. Interactive elements and smooth animations enhance the site's engagement and aesthetics.<br><br>
+                Additionally, the portfolio includes a contact form for easy communication and a blog section for sharing insights and updates. Overall, this portfolio website effectively showcases my expertise and creativity in web development.
+            </p></div>
+        </div>
+        <div class="first_html_tools_div">
+          <h2 id="heading_2">Tools Used</h2>
+          <span class="skills_span">html</span>
+          <span class="skills_span">CSS</span>
+          <span class="skills_span">JAVA SCRIPT</span>
+          <span class="skills_span">SMTP</span>
+        </div>
+    </div>
+    <div class="Live_Links_div">
+        <div class="Live_Links_div_1"><h2 id="heading_2">SEE LIVE</h2></div>
+        <div class="Live_links_div_2">
+            <div class="first_html_button_div">
+            <div class="first_html_inner_button_button_div">
+                <a href="https://codehelp-shopping-cart.netlify.app/" target="_blank"><button class="first_html_banner_button_1">PROJECT LINK</button></a>
+              </div>
+              <div class="first_html_inner_button_button_div">
+                <a href="index.html"><button class="first_html_banner_button_2">GO BACK</button></a>
+              </div>
+            </div>
+        </div>
+    </div>
+      <div class="Footer">
+        <div class="Footer_Content">
+          <div class="Footer_Div_1">
+            <div class="Footer_Heading_Div">
+              <h2>PRANJAL JAIN</h2>
+            </div>
+            <p>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that 
+            leads to the success of the overall product.</p>
+          </div>
+          <div class="Footer_Div_2">
+            <div class="Footer_Social_Div">
+              <h2>SOCIAL</h2>
+            </div>
+            <div class="icons">
+              <a href="https://www.instagram.com/__pranjal121/?igsh=ZmdqMndoeDNkZGE2" target="_blank"><i class="fa-brands fa-instagram" style="color: #fafafa;"></i></a>
+              <a href="https://github.com/pra329" target="_blank"><i class="fa-brands fa-github" style="color: #fafafa;"></i></a>
+              <a href="https://www.linkedin.com/in/thepranjaljain/" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: #fafafa;"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr width="70%">
+        <div class="Footer_Last_Div">
+          <h2>© Copyright 2024 . Made by Pranjal Jain </h2>
+        </div>
+      </div>
+      <script src="script_2.js"></script>
+</body>
+</html>

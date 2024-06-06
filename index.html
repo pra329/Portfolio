@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="icon" href="assets/portfolio_686226.png"/>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pranjal Portfolio</title>
+    <style>
+      .mega-menu-full {
+        display: none;
+      }
+
+      .mega-menu-full.show {
+        display: block;
+      }
+
+      @media screen and (min-width: 767px) {
+        .menu-icon {
+          display: none;
+        }
+
+        .mega-menu-full {
+          display: flex !important;
+        }
+      }
+
+      @media screen and (min-width: 767px) and (max-width: 928px) {
+        .nav_div {
+          margin-right: 2%;
+        }
+
+        .nav_img {
+          margin-left: 2%;
+        }
+
+        ul {
+          padding: 0;
+          margin: 0;
+        }
+
+        .container_2 {
+          display: none;
+        }
+
+        .About_Me_Container{
+          display:flex;
+          flex-direction:column;
+          margin-top:100px;
+          justify-content: center;
+          flex-wrap:nowrap;
+        }
+
+        .about_first_div {
+          width: 80%;
+          margin-left:70px;
+          margin-bottom:20px;
+        }
+
+        .about_second_div {
+          width: 80%;
+          margin-left:70px;
+        }
+
+        .project_1{
+          display: flex;
+          flex-direction:column;
+          align-items:center;
+          margin-top:100px;
+        }
+        .div_1{
+            width:100%;
+            height:490px;
+            overflow:hidden;
+            margin-bottom:5%;
+            margin-left:8%;
+            margin-right:8%;
+        }
+        .div_2{
+            width:90%;
+            margin-left:8%;
+            margin-right:8%;
+            text-align:center;
+        }
+        .lap_image_1{
+            width:100%;
+            height:470px;
+        }
+        .form {
+          background-color: #ffffff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          width: 100%;
+          max-width: 80%;
+        }
+        
+        .Footer{
+            display:flex;
+            flex-direction:column;
+            background-color:black;
+            height:350px;
+        }
+
+        .Footer_Content{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .Footer_Div_1{
+            width:80%;
+            margin-left:0%;
+            margin-right:0%;
+            box-sizing:border-box;
+        }
+
+        .Footer_Div_1 p{
+            color:white;
+            font-size:0.8rem;
+        }
+
+        .Footer_Div_2{
+            width:80%;
+            height:50px;
+            margin-right:0%;
+            margin-left:0%;
+            margin-top:22px;
+            box-sizing:border-box;
+        }
+
+        .Footer_Heading_Div{
+            display:flex;
+            justify-content:start;
+        }
+
+        .Footer_Social_Div{
+            display:flex;
+            justify-content:start;
+        }
+
+        hr{
+        border: none;
+        height: 0.8px;
+        color: rgba(255, 255, 255, 0.498);
+        background-color: rgba(255, 255, 255, 0.482);
+        margin-top: 50px;
+        width:80%;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        .add-horizontal-line {
+          border-bottom: 2px solid rgba(0, 0, 0, 0.205);
+          margin-bottom: 10px;
+        }
+
+        .add-horizontal-line_1 {
+          border-top: 2px solid rgba(0, 0, 0, 0.205);
+          border-bottom: 2px solid rgba(0, 0, 0, 0.205);
+          margin-bottom: 10px;
+          margin-top: 15px;
+        }
+
+        .bg-gray-50 {
+          background-color: transparent !important;
+        }
+
+        .nav_div {
+          margin-right: 0%;
+        }
+
+        .menu-icon {
+          margin-right: 4%;
+        }
+
+        .nav_img {
+          margin-left: 3.8%;
+        }
+
+        .nav li {
+          font-weight: 700;
+          padding-left: 0.4rem;
+          height: 60px;
+          display: flex;
+          align-items: center;
+        }
+
+        .nav_div {
+          background-color: white !important;
+          width: 100%;
+        }
+
+        .container_2 {
+          display: none;
+        }
+
+        .About_Me_Container{
+          display:flex;
+          flex-direction:column;
+          margin-top:100px;
+          justify-content: center;
+          align-items:center;
+          flex-wrap:nowrap;
+        }
+
+        .About_Me_Wrapper p{
+          margin:10px;
+        }
+
+        .about_first_div {
+          width: 80%;
+          margin-left:40px;
+          margin-bottom:30px;
+        }
+
+        .about_second_div {
+          width: 80%;
+          margin-left:70px;
+        }
+
+        .About_Me{
+          padding-top:100px;
+          margin-bottom:20px;
+          padding-bottom:60px;
+          background-color: rgb(249,249,249)
+        }
+
+        .banner_button {
+            width: 240px;
+            height: 60px;
+            position: relative;
+            margin-top: 50px;
+            background:#7843E9;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+            transition: transform .3s;
+            margin-bottom:70px;
+        }
+        .project_1{
+          display: flex;
+          flex-direction:column;
+          align-items:center;
+          margin-top:100px;
+        }
+        .div_1{
+            width:100%;
+            height:280px;
+            overflow:hidden;
+            margin-left:4%;
+            margin-right:4%;
+        }
+        .div_2{
+            width:90%;
+            margin-left:4%;
+            margin-right:4%;
+            text-align:center;
+        }
+        .lap_image_1{
+            width:100%;
+            height:230px;
+        }
+      }
+      @media screen and (max-width: 768px) and (min-width: 580px) {
+        .project_1{
+          display: flex;
+          flex-direction:column;
+          align-items:center;
+          margin-top:100px;
+        }
+        .div_1{
+            width:100%;
+            height:420px;
+            overflow:hidden;
+            margin-left:4%;
+            margin-right:4%;
+        }
+        .div_2{
+            width:90%;
+            margin-left:4%;
+            margin-right:4%;
+            text-align:center;
+        }
+        .lap_image_1{
+            width:100%;
+            height:400px;
+        }
+        .form {
+          background-color: #ffffff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          width: 100%;
+          max-width: 80%;
+        }
+        .Footer{
+            display:flex;
+            flex-direction:column;
+            background-color:black;
+            height:350px;
+        }
+
+        .Footer_Content{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .Footer_Div_1{
+            width:70%;
+            margin-left:0%;
+            margin-right:0%;
+            box-sizing:border-box;
+        }
+
+        .Footer_Div_1 p{
+            color:white;
+            font-size:0.8rem;
+        }
+
+        .Footer_Div_2{
+            width:70%;
+            height:50px;
+            margin-right:0%;
+            margin-left:0%;
+            margin-top:22px;
+            box-sizing:border-box;
+        }
+
+        .Footer_Heading_Div{
+            display:flex;
+            justify-content:start;
+        }
+
+        .Footer_Social_Div{
+            display:flex;
+            justify-content:start;
+        }
+
+        hr{
+            border: none;
+            height: 0.8px;
+            color: rgba(255, 255, 255, 0.498);
+            background-color: rgba(255, 255, 255, 0.482);
+            margin-top: 50px;
+            width:80%
+        }
+      }
+
+      @media screen and (max-width: 580px) and (min-width: 470px) {
+        .project_1{
+          display: flex;
+          flex-direction:column;
+          align-items:center;
+          margin-top:100px;
+        }
+        .div_1{
+            width:100%;
+            height:320px;
+            overflow:hidden;
+            margin-left:4%;
+            margin-right:4%;
+        }
+        .div_2{
+            width:90%;
+            margin-left:4%;
+            margin-right:4%;
+            text-align:center;
+        }
+        .lap_image_1{
+            width:100%;
+            height:300px;
+        }
+        .form {
+          background-color: #ffffff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          width: 100%;
+          max-width: 80%;
+        }
+        .Footer{
+            display:flex;
+            flex-direction:column;
+            background-color:black;
+            height:350px;
+        }
+
+        .Footer_Content{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .Footer_Div_1{
+            width:70%;
+            margin-left:0%;
+            margin-right:0%;
+            box-sizing:border-box;
+        }
+
+        .Footer_Div_1 p{
+            color:white;
+            font-size:0.8rem;
+        }
+
+        .Footer_Div_2{
+            width:70%;
+            height:50px;
+            margin-left:0%;
+            margin-right:0%;
+            margin-top:22px;
+            box-sizing:border-box;
+        }
+
+        .Footer_Heading_Div{
+            display:flex;
+            justify-content:start;
+        }
+
+        .Footer_Social_Div{
+            display:flex;
+            justify-content:start;
+        }
+
+        hr{
+            border: none;
+            height: 0.8px;
+            color: rgba(255, 255, 255, 0.498);
+            background-color: rgba(255, 255, 255, 0.482);
+            margin-top: 50px;
+            width:80%
+        }
+      }
+      @media screen and (max-width: 470px) and (min-width:320px) {
+        .project_1{
+          display: flex;
+          flex-direction:column;
+          align-items:center;
+          margin-top:100px;
+        }
+        .div_1{
+            width:100%;
+            height:270px;
+            overflow:hidden;
+            margin-left:4%;
+            margin-right:4%;
+        }
+        .div_2{
+            width:90%;
+            margin-left:4%;
+            margin-right:4%;
+            text-align:center;
+        }
+        .lap_image_1{
+            width:100%;
+            height:240px;
+        }
+        .form {
+          background-color: #ffffff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          width: 100%;
+          max-width: 90%;
+        }
+        .Footer{
+            display:flex;
+            flex-direction:column;
+            background-color:black;
+            height:350px;
+        }
+
+        .Footer_Content{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .Footer_Div_1{
+            width:70%;
+            margin-left:0%;
+            margin-right:0%;
+            box-sizing:border-box;
+        }
+
+        .Footer_Div_1 p{
+            color:white;
+            font-size:0.8rem;
+        }
+
+        .Footer_Div_2{
+            width:70%;
+            height:50px;
+            margin-right:0%;
+            margin-left:0%;
+            margin-top:22px;
+            box-sizing:border-box;
+        }
+
+        .Footer_Heading_Div{
+            display:flex;
+            justify-content:start;
+        }
+
+        .Footer_Social_Div{
+            display:flex;
+            justify-content:start;
+        }
+
+        hr{
+            border: none;
+            height: 0.8px;
+            color: rgba(255, 255, 255, 0.498);
+            background-color: rgba(255, 255, 255, 0.482);
+            margin-top: 50px;
+            width:80%
+        }
+      }
+      @media screen and (max-width: 2200px) and (min-width:1550px) {
+        .project_1{
+          display: flex;
+          flex-direction:row;
+          align-items:center;
+          margin-top:100px;
+        }
+        .div_1{
+            width:100%;
+            height:550px;
+            overflow:hidden;
+            margin-left:4%;
+            margin-right:4%;
+        }
+        .div_2{
+            width:90%;
+            margin-left:4%;
+            margin-right:4%;
+            text-align:center;
+        }
+        .lap_image_1{
+            width:100%;
+            height:520px;
+        }
+        .form {
+          background-color: #ffffff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          width: 100%;
+          max-width: 50%;
+        }
+      }
+      @media screen and (max-width: 3000px) and (min-width:2200px) {
+        .project_1{
+          display: flex;
+          flex-direction:row;
+          align-items:center;
+          margin-top:100px;
+        }
+        .div_1{
+            width:100%;
+            height:620px;
+            overflow:hidden;
+            margin-left:4%;
+            margin-right:4%;
+            box-sizing:border-box;
+        }
+        .div_2{
+            width:90%;
+            margin-left:4%;
+            margin-right:4%;
+            text-align:center;
+        }
+        .lap_image_1{
+            width:100%;
+            height:600px;
+        }
+        .form {
+          background-color: #ffffff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          width: 100%;
+          max-width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900 nav">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xxl wrapper">
+            <a href="#home1" id="home1-link" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="assets/tinywow_Screenshot (111)_55304901-Photoroom.png-Photoroom.png" class="h-8 nav_img Avatar" alt="Flowbite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white heading_span">PRANJAL JAIN</span>
+            </a>
+            <button data-collapse-toggle="mega-menu-full" type="button" class="md:hidden inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 menu-icon" aria-controls="mega-menu-full" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5 svgg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+                <img src="assets/xmark-solid.svg" class="active iconn" />
+            </button>
+            <div id="mega-menu-full" class="items-center justify-between font-medium hidden w-full md:flex md:w-auto md:order-1 mega-menu-full nav_div">
+                <ul class="flex flex-col md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li class="add-horizontal-line_1">
+                        <a href="#home" id="home-link" class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">HOME</a>
+                    </li>
+                    <li class="add-horizontal-line">
+                        <a id="about-link" href="#about" class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">ABOUT</a>
+                    </li>
+                    <li class="add-horizontal-line">
+                        <a href="#projects" id="project-link" class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a href="#contact" id="contact-link" class="block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    </div>
+    <div class="gradient">
+      <div class="background-image"></div>
+      <div class="heading" id="home">
+        <h1>HEY, I'M PRANJAL JAIN</h1>
+      </div>
+      <div class="content">
+        <h2>
+          A Result-Oriented Web Developer building and managing Websites and
+          Web Applications that leads to the success of the overall product
+        </h2>
+      </div>
+      <div class="button_div">
+        <a href="#projects_button" id="project-link_button"><button class="banner_button">PROJECTS</button></a>
+      </div>
+      <div class="container_2">
+        <div class="ball"></div>
+      </div>
+    </div>
+    <div class="About_Me" id="about">
+      <div class="About_Me_Wrapper">
+        <h1 class="About_Heading">ABOUT ME</h1>
+        <span class="underline"></span>
+        <p class="About_Content">
+          Here you will find more information about me, what I do, and my
+          current skills mostly in terms of programming and technology
+        </p>
+      </div>
+      <div class="About_Me_Container">
+        <div class="about_first_div">
+          <h2 class="heading_2">Get to know me!</h2>
+          <p>I'm a <span class="intext">Frontend Focused Web Developer</span> building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <span class="intext">Projects</span> section.<br/><br/>
+
+          I also like sharing content related to the stuff that I have learned over the years in <span class="intext">Web Development</span> so it can help other people of the Dev Community. Feel free to Connect or Follow me on my <a href="https://www.linkedin.com/in/thepranjaljain/" target="_blank" class="about_anchor">Linkedin</a> and <a href="https://www.instagram.com/__pranjal121/?igsh=ZmdqMndoeDNkZGE2" class="about_anchor" target="_blank">Instagram </a>where I post useful content related to Web Development and Programming<br/><br/>
+          
+          I'm open to <span class="intext">Job</span> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <span class="intext">contact me</span></p>
+          <div class="button_div">
+            <a href="#contact_button" id="contact_button"><button class="about_button">CONTACT</button></a>
+          </div>
+        </div>
+        <div class="about_second_div">
+          <h2 id="heading_2">My Skills</h2>
+          <span class="skills_span">HTML</span>
+          <span class="skills_span">CSS</span>
+          <span class="skills_span">JAVA SCRIPT</span>
+          <span class="skills_span">REACT</span>
+          <span class="skills_span">C++</span>
+          <span class="skills_span">GIT</span>
+          <span class="skills_span">GIT HUB</span>
+          <span class="skills_span">RESPONSIVE DESIGN</span>
+          <span class="skills_span">DSA</span>
+          <span class="skills_span">MONGO DB</span>
+          <span class="skills_span">POSTMAN</span>
+        </div>
+      </div>
+    </div>
+    <div class="Project_Section">
+    <div class="Projects" id="projects">
+      <div class="project_div_1">
+        <h1 class="Project_Heading">PROJECTS</h1>
+        <span class="underline_project"></span>
+        <p class="Project_Content">Here you will find some of the personal and clients projects that I created with each project containing its own case study</p>
+      </div>
+      <div class="project_div_2">
+        <div class="project_1">
+          <div class="div_1">
+            <img src="assets/project-mockup-example-overlay.jpeg" class="lap_image_1"/>
+          </div>
+          <div class="div_2">
+            <h2 class="heading_2">Study Notion</h2>
+            <p class="project_1_content">Developed StudyNotion, an ed-tech platform using MERN stack, enabling
+              creation, consumption, and rating of educational content. Built a seamless learning experience with ReactJS for the
+              front end, NodeJS and ExpressJS for the back end, and MongoDB for the database. Designed for students &
+              instructors with features like user authentication, course creation, payment integration & cloud storage</p>
+            <div class="button_div">
+              <a href="first.html" target="_blank"><button class="project_button">CASE STUDY</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="project_1">
+          <div class="div_1">
+            <img src="assets/project-mockup-example-overlay (4).jpeg" class="lap_image_1"/>
+          </div>
+          <div class="div_2">
+            <h2 class="heading_2">ECOMZY</h2>
+            <p class="project_1_content">Ecomzy is a dynamic and user-friendly e-commerce platform built using React, designed to provide a seamless shopping experience. It features a responsive interface, ensuring optimal performance across various devices. The site offers robust product search and filtering capabilities, 
+              easy navigation, and secure checkout processes. With its modern design and efficient functionality, Ecomzy caters to both sellers and buyers, enhancing the overall online shopping experience.</p>
+            <div class="button_div">
+              <a href="second.html" target="_blank"><button class="project_button">CASE STUDY</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="project_1">
+          <div class="div_1">
+            <img src="assets/project-mockup-example-overlay (2).jpeg" class="lap_image_1"/>
+          </div>
+          <div class="div_2">
+            <h2 class="heading_2">Portfolio</h2>
+            <p class="project_1_content">Created a visually appealing and user-friendly portfolio website to showcase my projects and skills. Designed and developed custom layouts and interactive elements to provide an engaging user experience.
+               Organized content effectively to highlight my achievements and professional journey.</p>
+            <div class="button_div">
+              <a href="third.html" target="_blank"><button class="project_button">CASE STUDY</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gradient_contact" id="contact">
+    <div class="background-image"></div>
+    <div class="heading_contact">
+      <h2 class="heading_2">CONTACT</h2>
+      <span class="underline_contact"></span>
+      <p class="contact_content">Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
+    </div>
+    <div class="form">
+      <div>
+      <form action="submit_form" method="post" id="contact_form">
+        <label for="Name">Name:</label><br>
+        <input type="text" id="Name" name="Name" placeholder="Enter Your Name"><br><br>
+        <label for="Email">Email:</label><br>
+        <input type="text" id="Email" name="Email" placeholder="Enter Your Email"><br><br>
+        <label for="Message">Message:</label><br>
+        <textarea id="Message" name="Message" rows="4" cols="50" placeholder="Enter Your Message"></textarea><br><br>
+      </div>
+      <div class="contact_button">
+        <input type="submit" value="Submit">
+      </div>
+      </form>
+    </div>
+  </div>
+  <div class="Footer">
+    <div class="Footer_Content">
+      <div class="Footer_Div_1">
+        <div class="Footer_Heading_Div">
+          <h2>PRANJAL JAIN</h2>
+        </div>
+        <p>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that 
+        leads to the success of the overall product.</p>
+      </div>
+      <div class="Footer_Div_2">
+        <div class="Footer_Social_Div">
+          <h2>SOCIAL</h2>
+        </div>
+        <div class="icons">
+          <a href="https://www.instagram.com/__pranjal121/?igsh=ZmdqMndoeDNkZGE2" target="_blank"><i class="fa-brands fa-instagram" style="color: #fafafa;"></i></a>
+          <a href="https://github.com/pra329" target="_blank"><i class="fa-brands fa-github" style="color: #fafafa;"></i></a>
+          <a href="https://www.linkedin.com/in/thepranjaljain/" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: #fafafa;"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr width="70%">
+    <div class="Footer_Last_Div">
+      <h2>© Copyright 2024 . Made by Pranjal Jain </h2>
+    </div>
+  </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="Email.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
